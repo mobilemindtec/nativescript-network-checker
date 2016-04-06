@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded">
+  <StackLayout>
+    <Label text="Network Checker" class="title"/>
+    <Button text="Internt Check" tap="onConnecitonCheck" />
+    <Button text="Wifi Check" tap="onWifiCheck" />
+    <Label text="{{ message }}" class="message" textWrap="true"/>
+  </StackLayout>
+</Page>
