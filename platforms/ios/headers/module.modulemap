@@ -1,0 +1,4 @@
+module NSNetworkCheckerListView {
+  umbrella "../../../../../platforms/ios/Pods/Headers/Public"
+  export *
+}
