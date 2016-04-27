@@ -3,9 +3,9 @@ var application = require("application");
 
 exports.isConnected = function() {  
 
-  var context = application.android.currentContext
+  var activity = application.android.foregroundActivity || application.android.startActivity  
 
-  var connectivity = context.getSystemService(android.content.Context.CONNECTIVITY_SERVICE)
+  var connectivity = activity.getSystemService(android.content.Context.CONNECTIVITY_SERVICE)
   
   if (connectivity == null) {
     console.log("ConnectionTools.isConnected(Context context) : CONNECTIVITY_SERVICE is null!!");      
@@ -24,9 +24,9 @@ exports.isConnected = function() {
 
 exports.isWifi = function() {
 
-  var context = application.android.currentContext
+  var activity = application.android.foregroundActivity || application.android.startActivity  
 
-  var connManager = context.getSystemService(android.content.Context.CONNECTIVITY_SERVICE);
+  var connManager = activity.getSystemService(android.content.Context.CONNECTIVITY_SERVICE);
 
   if (connManager == null) {
     return false;
