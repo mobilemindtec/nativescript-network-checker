@@ -1,5 +1,5 @@
 { "name" : "nativescript-network-checker",
-  "main" : "network-checker.js",
+  "main" : "index.js",
   "version": "0.0.1",
   "nativescript": {
     "platforms": {
