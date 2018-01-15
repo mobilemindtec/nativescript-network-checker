@@ -1,2 +1,2 @@
 
-pod 'Reachability', :git => 'git@github.com:mobilemindtec/Reachability.git'
+pod 'Reachability', :git => 'https@github.com/mobilemindtec/Reachability.git'
