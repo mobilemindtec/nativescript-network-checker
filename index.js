@@ -1,1 +1,1 @@
-require("utils/module-merge").merge(require("./network-checker"), exports)
+export * from "./network-checker"

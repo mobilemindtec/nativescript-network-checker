@@ -1,4 +1,4 @@
-var application = require("application");
+var application = require("@nativescript/core/application");
 
 
 var internetReachable
